@@ -1,9 +1,11 @@
 <template>
     <div class="block">
         <h2>Interests</h2>
-        <p v-for="interest in interests">
-            {{interest.name}}
-        </p>
+        <div class="container">
+            <p v-for="interest in interests" class="interest">
+                {{interest.name}}
+            </p>
+        </div>
     </div>
     
 </template>
@@ -29,10 +31,22 @@ export default {
 
 .block {
     background-color: white;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 1em;
     padding-bottom: 1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.interest {
+    border: solid 1px;
+    border-radius: 5px;
+    background: #22c0e8;
+    padding: 10px;
+    box-shadow: 1px 1px gray;
 }
 
 </style>
