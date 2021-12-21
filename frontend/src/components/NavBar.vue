@@ -1,6 +1,6 @@
 <template>
   <ul>
-      <li v-for="link in links">
+      <li v-for="link in links" v-bind:class="{ active: link.path == route }">
           <a :href="link.path">{{link.name}}</a>
       </li>
   </ul>
@@ -10,7 +10,13 @@
 export default {
   name: 'NavBar',
   props: {
-    links: Object
+    links: Object()
+  },
+  computed: {
+    route: function() {
+      console.log(this.$route);
+      return this.$route.fullPath
+    }
   }
 }
 </script>
@@ -31,19 +37,26 @@ li {
 
 li a {
   display: block;
+  font-weight: bold;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+.active {
+  background-color: #22c0e8;
+}
+
+li:hover {
+  background-color: #189cbd;
+}
+
+li:hover:not(.active) {
   background-color: #111;
 }
 
-.active {
-  background-color: #04AA6D;
-}
+
 </style>
 
 <!-- example from https://www.w3schools.com/css/css_navbar_horizontal.asp -->
