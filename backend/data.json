@@ -1,0 +1,116 @@
+{
+    "job": [
+        { "name": "Apprentice as Software Engineer"}
+    ],
+    "description": [
+        { "content": "Apprentice as software developer at Thales Alenia Space and student at ENSEEIHT. Curious and having a desire to learn. Want to continue in this ﬁeld to become a software engineer."}
+    ],
+    "educations": [
+        {
+            "diploma": "Engineer degree : Digital science",
+            "school": "ENSEEIHT",
+            "start_date": "09/2020",
+            "location": "Toulouse, France",
+            "courses" : [
+                "Concurrrency programming",
+                "Application conception",
+                "Building an algorithm",
+                "Project management"
+            ]
+        },
+        {
+            "diploma": "DUT : Networks & Telecommunication",
+            "school": "University Insitution of Technology of Grenoble",
+            "start_date": "09/2018",
+            "end_date": "06/2020",
+            "location": "Grenoble, France",
+            "courses" : [
+                "Setting up computer networks",
+                "Signal processing",
+                "Basics of informatic"
+            ]
+        },
+        {
+            "diploma": "STI2D - Technical Science of Industry and Sustainable Developpement",
+            "school": "Charlie Chaplin high school",
+            "start_date": "09/2015",
+            "end_date": "06/2018",
+            "location": "Décines-Charpieux, France"
+        }
+    ],
+    "word_experiences": [
+        {
+            "name": "Apprentice as software developer",
+            "company": "Thaes Alenia Space",
+            "start_date": "09/2020",
+            "location": "Toulouse, France",
+            "description": "Design, create, and deliver are the jobs of Thales Alenia Space in matter of satellite systems. I am working in the System Simlation Tools (SST) team.",
+            "achievements" : [
+                "Creating simulation softwares",
+                "Discovery of core business around satellite",
+                "Working in a big company"
+            ]
+        },
+        {
+            "name": "Intern",
+            "company": "iExec",
+            "start_date": "04/2020",
+            "end_date": "06/2020",
+            "location": "Lyon, France",
+            "description": "As pioneers of cloud decentralization, iExec is developing protocols with the objective to bring decentralization economy for everyone.",
+            "achievements" : [
+                "Building the iExec's demonstrator",
+                "Discovery of start-up company lifestyle",
+                "First job in a company"
+            ]
+        }
+    ],
+    "skills": [
+        { "name": "Programming", "examples": [ "Python", "Java", "Javascript", "MATLAB" ] },
+        { "name": "Versionning", "examples": [ "Git/Github", "SVN" ] },
+        { "name": "Database", "examples": [ "MS Access", "Mysql", "Redis", "MongoDB" ] },
+        { "name": "Virtualization", "examples": [ "Docker", "VirtualBox" ] },
+        { "name": "Networking", "examples": [ "HTTP", "FTP", "DHCP", "DNS", "Proxy", "VLAN" ] }
+    ],
+    "projects": [
+        { 
+            "name": "iExec's demonstrator",
+            "start_date": "04/2020",
+            "end_date": "06/2020",
+            "achivements": [
+                "Discovery of processor architectures (ARM / X86)",
+                "Discovery of the universe of blockchain and cryptocurrency"
+            ]
+        },
+        { 
+            "name": "LoRa",
+            "start_date": "11/2019",
+            "end_date": "04/2020",
+            "achievements": [
+                "Setting up an IoT Infrastructure based on the LoRaWan protocol",
+                "Working in collaboration with the CNRS",
+                "Learning of Docker"
+            ]
+        },
+        { 
+            "name": "Battleship",
+            "start_date": "03/2019",
+            "end_date": "06/2019",
+            "achivements": [
+                "The objectif of this project was to reproduce the game of battleship in Python",
+                "Working in a team",
+                "Discovery of versioning (SVN)"
+            ]
+        }
+    ],
+    "language": [
+        { "name": "French", "level": "C2" },
+        { "name": "English", "level": "B2"}
+    ],
+    "interests": [ 
+        { "name": "Cinema" }, 
+        { "name": "Sport" }, 
+        { "name": "Video-games" }, 
+        { "name": "Reading" }
+    ]
+}
