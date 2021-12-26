@@ -11,18 +11,15 @@
 </template>
 
 <script>
+import {fetchInterests} from '@/service/fetchData.js'
+
 export default {
     name: 'CVInterest',
     data() {
         return {interests: []}
     },
-    mounted() {
-        fetch(`http://localhost:3000/api/cv/interest`, { method: 'GET' })
-        .then(res => res.json())
-        .then((value) => {
-            this.interests = value
-        })
-        .catch(error => console.log(error.message));
+    async mounted() {
+        this.interests = await fetchInterests()
     }
 }
 </script>

@@ -41,12 +41,12 @@ app.use((req, res, next) => {
 app.use(bodyParser.json());
 
 app.use('/api/cv/description', descriptionRoutes);
-app.use('/api/cv/education', educationRoutes);
-app.use('/api/cv/interest', interestRoutes);
+app.use('/api/cv/educations', educationRoutes);
+app.use('/api/cv/interests', interestRoutes);
 app.use('/api/cv/job', jobRoutes);
-app.use('/api/cv/language', languageRoutes);
-app.use('/api/cv/project', projectRoutes);
-app.use('/api/cv/skill', skillRoutes);
-app.use('/api/cv/workExperience', workExperienceRoutes);
+app.use('/api/cv/languages', languageRoutes);
+app.use('/api/cv/projects', projectRoutes);
+app.use('/api/cv/skills', skillRoutes);
+app.use('/api/cv/workExperiences', workExperienceRoutes);
 
 module.exports = app;

@@ -77,7 +77,7 @@
             "name": "iExec's demonstrator",
             "beginDate": "04/2020",
             "endDate": "06/2020",
-            "achivements": [
+            "achievements": [
                 "Discovery of processor architectures (ARM / X86)",
                 "Discovery of the universe of blockchain and cryptocurrency"
             ]
@@ -96,7 +96,7 @@
             "name": "Battleship",
             "beginDate": "03/2019",
             "endDate": "06/2019",
-            "achivements": [
+            "achievements": [
                 "The objectif of this project was to reproduce the game of battleship in Python",
                 "Working in a team",
                 "Discovery of versioning (SVN)"

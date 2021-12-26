@@ -3,7 +3,7 @@
         <h2>Languages</h2>
         <div v-for="language in languages">
             <label :for="language.id">{{language.name}} : </label>
-            <progress :id="language.id" max="100" :value="language.level"> {{language.level}}% </progress>
+            <progress :id="language.id" max="100" :value="level[language.level]"> {{level[language.level]}}% </progress>
         </div>
         
     </div>
@@ -11,18 +11,15 @@
 </template>
 
 <script>
+import {fetchLanguages} from '@/service/fetchData'
+
 export default {
     name: 'CVLanguage',
     data() {
-        return {languages: []}
+        return {languages: [], level: {'B2': 75, 'C2': 100}}
     },
-    mounted() {
-        fetch(`http://localhost:3000/api/cv/language`, { method: 'GET' })
-        .then(res => res.json())
-        .then((value) => {
-            this.languages = value
-        })
-        .catch(error => console.log(error.message));
+    async mounted() {
+        this.languages = await fetchLanguages() 
     }
 }
 </script>

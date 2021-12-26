@@ -6,12 +6,14 @@
 
       <div id='content'>
             <div class="column">
+                <CVWorkExperience></CVWorkExperience>
                 <CVEducation></CVEducation>
                 <CVInterest></CVInterest>
             </div>
             <div class="column">
+                <CVProject></CVProject>
                 <CVLanguage></CVLanguage>
-                <CVInterest></CVInterest>
+                <CVSkill></CVSkill>
             </div>
       </div>
   </div>
@@ -22,6 +24,9 @@ import CVDescription from '@/components/CV_Components/CV_Description.vue'
 import CVInterest from '@/components/CV_Components/CV_Interest.vue'
 import CVLanguage from '@/components/CV_Components/CV_Language.vue'
 import CVEducation from '@/components/CV_Components/CV_Education.vue'
+import CVSkill from '@/components/CV_Components/CV_Skill.vue'
+import CVProject from '@/components/CV_Components/CV_Project.vue'
+import CVWorkExperience from '@/components/CV_Components/CV_WorkExperience.vue'
 
 export default {
   name: 'Cv',
@@ -29,7 +34,10 @@ export default {
       CVDescription,
       CVInterest,
       CVLanguage,
-      CVEducation
+      CVEducation,
+      CVSkill,
+      CVProject,
+      CVWorkExperience
   },
   setup() {
 

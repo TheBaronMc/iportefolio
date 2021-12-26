@@ -3,7 +3,7 @@
         <h2>Skills</h2>
         <div class="container">
             <p v-for="skill in skills" class="skill">
-                {{skill.skill}}
+                {{skill.name}}: {{skill.examples.join(', ')}}
             </p>
         </div>
     </div>
@@ -11,18 +11,15 @@
 </template>
 
 <script>
+import {fetchSkills} from '@/service/fetchData'
+
 export default {
     name: 'CVSkill',
     data() {
         return {skills: []}
     },
-    mounted() {
-        fetch(`http://localhost:3000/api/cv/skill`, { method: 'GET' })
-        .then(res => res.json())
-        .then((value) => {
-            this.skills = value
-        })
-        .catch(error => console.log(error.message));
+    async mounted() {
+        this.skills = await fetchSkills()
     }
 }
 </script>
@@ -36,12 +33,15 @@ export default {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .skill {
+    width: 80%;
     border: solid 1px;
     border-radius: 5px;
     background: #22c0e8;

@@ -1,27 +1,26 @@
 <template>
     <div class="block">
         <h1 class="name">Charly Ginevra <br>
-        Apprentice as software developer
-    </h1>
-    <p>{{ description }}</p>
+            {{ job }}
+        </h1>
+        <p>{{ description }}</p>
     </div>
     
 </template>
 
 <script>
+import {fetchDescription, fetchJob} from '@/service/fetchData.js'
+
 export default {
     name: 'CVDescription',
     data() {
-        return {description: 'no description'}
+        return {description: 'no description', job: 'no job'}
     },
-    mounted() {
-        fetch(`http://localhost:3000/api/cv/description`, { method: 'GET' })
-        .then(res => res.json())
-        .then((value) => {
-            console.log(value);
-            (value.length == 0) ? this.description = "no description" : console.log('bidule'); this.description = value[0].content
-        })
-        .catch(error => console.log(error.message));
+    async mounted() {
+       let res = await fetchDescription()
+       let job = await fetchJob()
+       this.description = res[0].content
+       this.job = job[0].name
     }
 }
 </script>

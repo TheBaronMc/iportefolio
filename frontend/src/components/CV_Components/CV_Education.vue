@@ -15,18 +15,15 @@
 </template>
 
 <script>
+import {fetchEducations} from '@/service/fetchData.js'
+
 export default {
     name: 'CVEducation',
     data() {
         return {educations: []}
     },
-    mounted() {
-        fetch(`http://localhost:3000/api/cv/education`, { method: 'GET' })
-        .then(res => res.json())
-        .then((value) => {
-            this.educations = value
-        })
-        .catch(error => console.log(error.message));
+    async mounted() {
+        this.educations = await fetchEducations()
     }
 }
 </script>
