@@ -5,13 +5,13 @@ const mongoose = require('mongoose');
 const infos = require('./infos.json');
 
 const modelDescription = require('./models/cv/description');
-const modelEducation = require('./models/cv/education');
-const modelInterest = require('./models/cv/interest');
+const modelEducation = require('./models/cv/educations');
+const modelInterest = require('./models/cv/interests');
 const modelJob = require('./models/cv/job');
-const modelLanguage = require('./models/cv/language');
-const modelProject = require('./models/cv/project');
-const modelSkill = require('./models/cv/skill');
-const modelWorkExperience = require('./models/cv/workExperience');
+const modelLanguage = require('./models/cv/languages');
+const modelProject = require('./models/cv/projects');
+const modelSkill = require('./models/cv/skills');
+const modelWorkExperience = require('./models/cv/workExperiences');
 
 // Router(s)
 const descriptionRoutes = require('./routes/cv/description');

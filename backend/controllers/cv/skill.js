@@ -1,7 +1,7 @@
-const Skill = require('../../models/cv/skill');
+const Skills = require('../../models/cv/skills');
 
 exports.getAllStuff = (req, res, next) => {
-    Skill.find().then(
+    Skills.find().then(
         (skills) => {
             res.status(200).json(skills);
         }

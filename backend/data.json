@@ -9,7 +9,7 @@
         {
             "diploma": "Engineer degree : Digital science",
             "school": "ENSEEIHT",
-            "start_date": "09/2020",
+            "beginDate": "09/2020",
             "location": "Toulouse, France",
             "courses" : [
                 "Concurrrency programming",
@@ -21,8 +21,8 @@
         {
             "diploma": "DUT : Networks & Telecommunication",
             "school": "University Insitution of Technology of Grenoble",
-            "start_date": "09/2018",
-            "end_date": "06/2020",
+            "beginDate": "09/2018",
+            "endDate": "06/2020",
             "location": "Grenoble, France",
             "courses" : [
                 "Setting up computer networks",
@@ -33,16 +33,16 @@
         {
             "diploma": "STI2D - Technical Science of Industry and Sustainable Developpement",
             "school": "Charlie Chaplin high school",
-            "start_date": "09/2015",
-            "end_date": "06/2018",
+            "beginDate": "09/2015",
+            "endDate": "06/2018",
             "location": "Décines-Charpieux, France"
         }
     ],
-    "word_experiences": [
+    "workExperiences": [
         {
-            "name": "Apprentice as software developer",
+            "job": "Apprentice as software developer",
             "company": "Thaes Alenia Space",
-            "start_date": "09/2020",
+            "beginDate": "09/2020",
             "location": "Toulouse, France",
             "description": "Design, create, and deliver are the jobs of Thales Alenia Space in matter of satellite systems. I am working in the System Simlation Tools (SST) team.",
             "achievements" : [
@@ -52,10 +52,10 @@
             ]
         },
         {
-            "name": "Intern",
+            "job": "Intern",
             "company": "iExec",
-            "start_date": "04/2020",
-            "end_date": "06/2020",
+            "beginDate": "04/2020",
+            "endDate": "06/2020",
             "location": "Lyon, France",
             "description": "As pioneers of cloud decentralization, iExec is developing protocols with the objective to bring decentralization economy for everyone.",
             "achievements" : [
@@ -75,8 +75,8 @@
     "projects": [
         { 
             "name": "iExec's demonstrator",
-            "start_date": "04/2020",
-            "end_date": "06/2020",
+            "beginDate": "04/2020",
+            "endDate": "06/2020",
             "achivements": [
                 "Discovery of processor architectures (ARM / X86)",
                 "Discovery of the universe of blockchain and cryptocurrency"
@@ -84,8 +84,8 @@
         },
         { 
             "name": "LoRa",
-            "start_date": "11/2019",
-            "end_date": "04/2020",
+            "beginDate": "11/2019",
+            "endDate": "04/2020",
             "achievements": [
                 "Setting up an IoT Infrastructure based on the LoRaWan protocol",
                 "Working in collaboration with the CNRS",
@@ -94,8 +94,8 @@
         },
         { 
             "name": "Battleship",
-            "start_date": "03/2019",
-            "end_date": "06/2019",
+            "beginDate": "03/2019",
+            "endDate": "06/2019",
             "achivements": [
                 "The objectif of this project was to reproduce the game of battleship in Python",
                 "Working in a team",
@@ -103,7 +103,7 @@
             ]
         }
     ],
-    "language": [
+    "languages": [
         { "name": "French", "level": "C2" },
         { "name": "English", "level": "B2"}
     ],

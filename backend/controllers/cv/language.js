@@ -1,7 +1,7 @@
-const Language = require('../../models/cv/language');
+const Languages = require('../../models/cv/languages');
 
 exports.getAllStuff = (req, res, next) => {
-    Language.find().then(
+    Languages.find().then(
         (languages) => {
             res.status(200).json(languages);
         }

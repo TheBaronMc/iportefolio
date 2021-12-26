@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const languageSchema = mongoose.Schema({
     name: { type: String, required: true},
-    level: { type: Number, required: true},
+    level: { type: String, required: true},
     description: { type: String, required : false }
 });
 

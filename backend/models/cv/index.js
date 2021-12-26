@@ -1,10 +1,10 @@
 const description = require('./description')
-const education = require('./education')
-const interest = require('./interest')
+const educations = require('./educations')
+const interests = require('./interests')
 const job = require('./job')
-const language = require('./language')
-const project = require('./project')
-const skill = require('./skill')
-const wordExeperience = require('./workExperience')
+const languages = require('./languages')
+const projects = require('./projects')
+const skills = require('./skills')
+const workExperiences = require('./workExperiences')
 
-module.exports={description, education, interest, job, language, project, skill, wordExeperience}
+module.exports={description, educations, interests, job, languages, projects, skills, workExperiences}

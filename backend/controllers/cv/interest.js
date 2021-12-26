@@ -1,7 +1,7 @@
-const Interest = require('../../models/cv/interest');
+const Interests = require('../../models/cv/interests');
 
 exports.getAllStuff = (req, res, next) => {
-    Interest.find().then(
+    Interests.find().then(
         (interests) => {
             res.status(200).json(interests);
         }

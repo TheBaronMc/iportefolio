@@ -1,7 +1,7 @@
-const WorkExperience = require('../../models/cv/workExperience');
+const WorkExperiences = require('../../models/cv/workExperiences');
 
 exports.getAllStuff = (req, res, next) => {
-    WorkExperience.find().then(
+    WorkExperiences.find().then(
         (workExperiences) => {
             res.status(200).json(workExperiences);
         }

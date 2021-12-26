@@ -5,7 +5,7 @@ const projectSchema = mongoose.Schema({
     beginDate: { type: Date, required: true},
     endDate: { type: Date, required: false},
     description: { type: String, required: false},
-    tasks: { type: Array, required: false}
+    achievements: { type: Array, required: false}
 });
 
 module.exports = mongoose.model('Project', projectSchema);

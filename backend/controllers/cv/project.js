@@ -1,7 +1,7 @@
-const Project = require('../../models/cv/project');
+const Projects = require('../../models/cv/projects');
 
 exports.getAllStuff = (req, res, next) => {
-    Project.find().then(
+    Projects.find().then(
         (projects) => {
             res.status(200).json(projects);
         }
