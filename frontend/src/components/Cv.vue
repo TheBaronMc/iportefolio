@@ -54,7 +54,6 @@ export default {
         flex-direction: column;
         justify-content: center;
         margin: auto;
-        margin-top: 1em;
         gap: 1em;
     }
 

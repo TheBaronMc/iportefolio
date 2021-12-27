@@ -1,16 +1,20 @@
 <template>
-  <NavBar :links="links" ></NavBar>
-
-  <router-view/>
+  <div class="body">
+    <NavBar :links="links" class="header" ></NavBar>
+    <router-view class="content"/>
+    <Footer class="footer"></Footer>
+  </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import NavBar from '@/components/NavBar.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   components: {
-    NavBar
+    NavBar,
+    Footer
   },
   setup() {
     const links = [{'name': 'Home', 'path': '/'},
@@ -21,12 +25,40 @@ export default {
 </script>
 
 <style>
+
+html, body {
+  height: 100%;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100%;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.footer, .header {
+  flex-shrink: 0;
+}
+
+.footer {
+  margin-top: 2em;
+}
+
+.header {
+  margin-bottom: 1em;
 }
 
 #nav {
