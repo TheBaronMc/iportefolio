@@ -1,9 +1,12 @@
 const mongoose = require('mongoose');
 
 const contactSchema = mongoose.Schema({
-    location: { type: String, required: true},
-    call: { type: String, required: true},
-    email: { type: String, required: true}
+    phone: { type: String, required: true },
+    mail: { type: String, required: true },
+    facebook: { type: Object, required: false},
+    instagram: { type: Object, required: false},
+    linkedin: { type: Object, required: false},
+    github: { type: Object, required: false},
 });
 
 module.exports = mongoose.model('Contact', contactSchema);

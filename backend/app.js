@@ -4,15 +4,6 @@ const mongoose = require('mongoose');
 
 const infos = require('./infos.json');
 
-const modelDescription = require('./models/cv/description');
-const modelEducation = require('./models/cv/educations');
-const modelInterest = require('./models/cv/interests');
-const modelJob = require('./models/cv/job');
-const modelLanguage = require('./models/cv/languages');
-const modelProject = require('./models/cv/projects');
-const modelSkill = require('./models/cv/skills');
-const modelWorkExperience = require('./models/cv/workExperiences');
-
 // Router(s)
 const descriptionRoutes = require('./routes/cv/description');
 const educationRoutes = require('./routes/cv/education');
@@ -22,6 +13,7 @@ const languageRoutes = require('./routes/cv/language');
 const projectRoutes = require('./routes/cv/project');
 const skillRoutes = require('./routes/cv/skill');
 const workExperienceRoutes = require('./routes/cv/workExperience');
+const contactRoutes = require('./routes/contact')
 
 const app = express();
 

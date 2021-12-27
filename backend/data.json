@@ -113,14 +113,14 @@
         { "name": "Video-games" }, 
         { "name": "Reading" }
     ],
-    "about": [
+    "contact": [
         {
             "mail": "cy.ginevra@gmail.com",
             "phone": "07.81.35.01.94",
             "facebook": {"link": "https://www.facebook.com/profile.php?id=100010679910781", "alias": "Facebook"},
             "instagram": {"link": "https://www.instagram.com/charlyginevra/", "alias": "Instagram"},
             "linkedin": {"link": "https://fr.linkedin.com/in/charly-ginevra-195758178", "alias": "Linkedin"},
-            "GitHub": {"link": "https://github.com/TheBaronMc", "alias": "GitHub"}
+            "github": {"link": "https://github.com/TheBaronMc", "alias": "GitHub"}
         }
     ]
 }
