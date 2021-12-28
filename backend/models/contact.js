@@ -7,6 +7,6 @@ const contactSchema = mongoose.Schema({
     instagram: { type: Object, required: false},
     linkedin: { type: Object, required: false},
     github: { type: Object, required: false},
-});
+}, {collection: 'contact'});
 
 module.exports = mongoose.model('Contact', contactSchema);

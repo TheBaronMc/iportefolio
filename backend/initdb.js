@@ -2,6 +2,7 @@ const mongoose = require('mongoose')
 const prompt = require('prompt-sync')()
 
 const cvModels = require('./models/cv')
+const contactModel = require('./models/contact')
 
 const data = require('./data.json')
 const infos = require('./infos.json')
@@ -54,12 +55,19 @@ let main = async () => {
         console.log(collection);
       }
     }
+    try {
+      await mongoose.connection.dropCollection('contact')
+    } catch (e) {
+      console.log(e)
+      console.log('contact')
+    }
   }
 
   // Create new collections
   for (let model of models) {    
     await addCollections(data[model], cvModels[model])
   }
+  await addCollections(data['contact'], contactModel)
 
   // Disconnect from Mongo
   await mongoose.disconnect()
