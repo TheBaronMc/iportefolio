@@ -40,5 +40,6 @@ app.use('/api/cv/languages', languageRoutes);
 app.use('/api/cv/projects', projectRoutes);
 app.use('/api/cv/skills', skillRoutes);
 app.use('/api/cv/workExperiences', workExperienceRoutes);
+app.use('/api/contact', contactRoutes);
 
 module.exports = app;
