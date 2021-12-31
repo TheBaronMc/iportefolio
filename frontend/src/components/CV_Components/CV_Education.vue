@@ -6,7 +6,7 @@
             <h3>{{education.diploma}}</h3>
             <div style="display: flex; width: 100%;">
                 <h4 style="flex-grow: 1;">{{education.school}}, {{education.location}}</h4>
-                <h4 style="flex-grow: 1; color: grey; text-align: end;">{{education.beginDate}} -> {{education.endDate || "now"}}</h4>
+                <h4 style="flex-grow: 1; color: grey; text-align: end;">{{date(education.beginDate)}} -> {{date(education.endDate) || 'now'}}</h4>
             </div>
         </li>
     </ul>
@@ -16,6 +16,7 @@
 
 <script>
 import {fetchEducations} from '@/service/fetchData.js'
+import {formatDate} from '@/service/formatDate.js'
 
 export default {
     name: 'CVEducation',
@@ -24,7 +25,12 @@ export default {
     },
     async mounted() {
         this.educations = await fetchEducations()
-    }
+    },
+    methods: {
+        date(dateStr) {
+            return formatDate(dateStr)
+        }
+    },
 }
 </script>
 

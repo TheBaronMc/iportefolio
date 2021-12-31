@@ -6,7 +6,7 @@
                 <h3>{{workExperience.job}}</h3>
                 <div style="display: flex; width: 100%;">
                     <h4 style="flex-grow: 1;">{{workExperience.company}}, {{workExperience.location}}</h4>
-                    <h4 style="flex-grow: 1; color: grey; text-align: end;">{{workExperience.beginDate}} -> {{workExperience.endDate || "now"}}</h4>
+                    <h4 style="flex-grow: 1; color: grey; text-align: end;">{{date(workExperience.beginDate)}} -> {{date(workExperience.endDate) || "now"}}</h4>
                 </div>
                 <p>{{ workExperience.description }}</p>
             </li>
@@ -17,6 +17,7 @@
 
 <script>
 import {fetchWorkExperiences} from '@/service/fetchData.js'
+import {formatDate} from '@/service/formatDate.js'
 
 export default {
     name: 'CVEducation',
@@ -25,7 +26,12 @@ export default {
     },
     async mounted() {
         this.workExperiences = await fetchWorkExperiences()
-    }
+    },
+    methods: {
+        date(dateStr) {
+            return formatDate(dateStr)
+        }
+    },
 }
 </script>
 

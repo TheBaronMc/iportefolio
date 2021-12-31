@@ -5,7 +5,7 @@
             <div v-for="(project, index) in projects" class="container">
                 <div class="project_name">
                     <h3>{{project.name}}</h3>
-                    <h4 class="date">{{project.beginDate}} -> {{project.endDate}}</h4>
+                    <h4 class="date">{{date(project.beginDate)}} -> {{date(project.endDate) || 'now'}}</h4>
                 </div>
                 <ul class="achievements">
                     <li v-for="achievement in project.achievements">{{achievement}}</li>
@@ -19,6 +19,7 @@
 
 <script>
 import {fetchProjects} from '@/service/fetchData'
+import {formatDate} from '@/service/formatDate.js'
 
 export default {
     name: 'CVProjects',
@@ -27,7 +28,12 @@ export default {
     },
     async mounted() {
         this.projects = await fetchProjects()
-    }
+    },
+    methods: {
+        date(dateStr) {
+            return formatDate(dateStr)
+        }
+    },
 }
 </script>
 

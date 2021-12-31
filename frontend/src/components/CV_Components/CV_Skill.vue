@@ -3,7 +3,7 @@
         <h2>Skills</h2>
         <div class="container">
             <p v-for="skill in skills" class="skill">
-                {{skill.name}}: {{skill.examples.join(', ')}}
+                <strong>{{skill.name}}:</strong> {{skill.examples.join(', ')}}
             </p>
         </div>
     </div>
