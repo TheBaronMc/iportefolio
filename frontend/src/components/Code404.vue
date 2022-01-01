@@ -12,13 +12,6 @@ export default {
 </script>
 
 <style scoped>
-.block {
-    background-color: white;
-    padding: 2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
 .container {
     display: flex;
     flex-direction: column;

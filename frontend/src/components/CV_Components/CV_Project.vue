@@ -43,14 +43,6 @@ hr {
     width: 100%;
 }
 
-.block {
-    background-color: white;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
 .container {
     display: flex;
     flex-direction: column;

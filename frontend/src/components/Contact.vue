@@ -33,14 +33,6 @@ export default {
 </script>
 
 <style scoped>
-
-.block {
-    background-color: white;
-    padding: 2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
 .content {
     display: flex;
     align-items: center;

@@ -26,11 +26,6 @@ export default {
 
 <style scoped>
 
-.block {
-    background-color: white;
-    padding-bottom: 1em;
-}
-
 .container {
     display: flex;
     flex-direction: row;

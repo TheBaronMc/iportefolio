@@ -69,4 +69,12 @@ html, body {
   font-weight: bold;
   color: #2c3e50;
 }
+
+.block {
+    background-color: white;
+    padding: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 15px;
+}
 </style>

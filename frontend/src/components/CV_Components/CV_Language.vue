@@ -26,12 +26,4 @@ export default {
 
 <style scoped>
 
-.block {
-    background-color: white;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
 </style>
