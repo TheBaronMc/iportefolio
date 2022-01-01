@@ -1,10 +1,10 @@
 <template>
     <div class="footer">
         <p>iportfolio by Charly Ginevra</p>
-        <div>
-            <a v-for="media in ['facebook', 'instagram', 'github', 'linkedin']" v-bind:href="links[media]" target="_blank">
-                <img :src="require(`@/assets/${media}_white.svg`)" alt="">
-            </a>
+        <div style="display: flex;">
+                <a v-for="media in medias" :href="links[media]" target="_blank">
+                    <img :src="require(`@/assets/${media}_white.svg`)" alt="">
+                </a>
         </div>
     </div>
 </template>
@@ -13,17 +13,16 @@
 import { fecthContact } from '@/service/fetchData'
 
 export default {
-  name: 'Footer',
-  setup() {
-      return {links: {facebook: '', instagram: '', github: '', linkedin: ''}}
+  name: 'Foot',
+  data() {
+      return {links : {facebook: '', instagram: '', github: '', linkedin: ''}, medias: ['facebook', 'instagram', 'github', 'linkedin']}
   },
   async mounted() {
       let res = await fecthContact()
       res = res[0]
-      for (let l of ['facebook', 'instagram', 'github', 'linkedin']) {
-          this.links[l] = res[l].link
-      } 
-      console.log(this.links);
+      for (let l of this.medias) {
+        this.links[l] = res[l].link
+      }
   },
 }
 </script>

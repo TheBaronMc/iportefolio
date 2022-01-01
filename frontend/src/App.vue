@@ -2,19 +2,19 @@
   <div class="body">
     <NavBar :links="links" class="header" ></NavBar>
     <router-view class="content"/>
-    <Footer class="footer"></Footer>
+    <Foot class="footer"></Foot>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import NavBar from '@/components/NavBar.vue'
-import Footer from '@/components/Footer.vue'
+import Foot from '@/components/Foot.vue'
 
 export default {
   components: {
     NavBar,
-    Footer
+    Foot
   },
   setup() {
     const links = [{'name': 'Home', 'path': '/'},
